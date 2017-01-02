@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>jQuery Example</title>
+	<meta content="text/html;charset=utf-8" http-equiv="Content-Type">  
+	<meta content="utf-8" http-equiv="encoding"> 
+	<link rel="stylesheet" href="" />
+	<script type="text/javascript" src="js/jquery-2.1.0.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$("#htmlButton").click(function(){
+				alert($("div").html());
+			});
+		
+			$("#setHtmlButton").click(function(){
+				$("div").prepend("<p class='red'>inserting using prepend</p>");
+				$("<p class='blue'>inserting using prependTo </p>").prependTo("div"); 
+			});
+		
+			$("#reset").click(function(){
+				location.reload();
+			});
+			
+			$("#checkIt").click(function(){
+				$("#checkme").prop("checked", true);
+			});
+			
+			$("#unCheckIt").click(function(){
+				$("#checkme").prop("checked", false);
+			});			
+		});
+	</script>
+	<style>
+		.blackBorder {
+			border : 1px dotted black;
+		}
+		
+	   .red{  
+			color:red;  
+			font-family: arial narrow;  
+		} 
+
+		.blue{  
+			color:blue;  
+			font-family: arial narrow;  
+	   } 
+
+	</style>
+</head>
+<body>
+	<button id="htmlButton">Using Html</button>
+	<button id="setHtmlButton">Setting Html</button>
+	<button id="reset">Reset</button>
+	<button id="checkIt">Checked</button>
+	<button id="unCheckIt">UnChecked</button>
+	<br/><br/>
+	<input id="checkme" type="checkbox" name="checkme">Check Me</input>
+	<div class="blackBorder">
+		HelloWorld
+	</div>
+	<br/>
+	<div class="blackBorder">
+		Welcome to JQuery.  
+	</div>	
+</html>

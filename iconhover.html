@@ -1,0 +1,123 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<head>
+<meta charset="utf-8">
+<style type="text/css">
+
+body,ul,li,a{
+    padding:0;
+    margin:0;
+    list-style:none;
+    text-decoration:none;
+    font-size:14px;
+    font-family:calibri,sans-serif;
+    background-color:#f9d2ee;
+	letter-spacing:0.5px;
+}
+
+#main{
+    width:300px;
+    margin:100px auto;
+    position:relative;
+}
+
+.social{
+	max-width:300px;
+}
+
+.social li{
+    min-height:40px;
+    clear:both;
+    float:none;
+    margin-bottom:10px;
+}
+
+.social a{
+    color:#232323;
+    position:relative;
+    display:block;
+    line-height:40px;
+    padding-left:55px;
+    z-index:1;
+	-moz-transition:color 0.4s ease;
+	-webkit-transition:color 0.4s ease;
+	-o-transition:color 0.4s ease;
+	transition:color 0.4s ease;
+}
+
+.social span{
+    display:block;
+    width:40px;
+    height:40px;
+    background:url(social.png) no-repeat;
+    position:absolute;
+    left:0;
+    border-radius:32px;
+    box-shadow:0 2px 4px rgba(0,0,0,0.2);
+    z-index:-1;
+	opacity:0.8;
+	-webkit-transition:opacity 0.4s ease,width 0.4s ease;
+	-moz-transition:opacity 0.4s ease,width 0.4s ease;
+	-o-transition:opacity 0.4s ease,width 0.4s ease;
+	transition:opacity 0.4s ease,width 0.4s ease;
+}
+
+.social .facebook{
+    background-color:#2d309a;
+}
+
+.social .twitter{
+    background-color:#64e4ff;
+    background-position:0 -40px;
+}
+
+.social .pinterest{
+    background-color:#d32b8a;
+    background-position:0 -80px;
+}
+
+.social .email{
+    background-color:#ef2b2b;
+    background-position:0 -120px;
+}
+
+.social .rss{
+    background-color:#ffba16;
+    background-position:0 -160px;
+}
+
+.social a:hover{
+	color:white;
+	text-shadow:0 1px 0 rgba(0,0,0,0.5);
+}
+
+.social a:hover span{
+    width:210px;
+	opacity:1;
+}
+
+</style>
+</head>
+	
+<body>
+	<div id="main">
+		<ul class="social">
+			<li>
+				<a href="#"><span class="facebook icon"></span>Join Us on Facebook</a>
+			</li>
+			<li>
+				<a href="#"><span class="twitter icon"></span>Follow Us on Twitter</a>
+			</li>
+			<li>
+				<a href="#"><span class="pinterest icon"></span>Join Us on Pinterest</a>
+			</li>
+			<li>
+				<a href="#"><span class="email icon"></span>Send Us Email</a>
+			</li>
+			<li>
+				<a href="#"><span class="rss icon"></span>Subscrible RSS Feed</a>
+			</li>
+		</ul>
+	</div>
+</body>
+</html>
